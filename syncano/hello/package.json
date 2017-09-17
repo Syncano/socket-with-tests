@@ -1,0 +1,26 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn && cross-env NODE_ENV=test mocha 'test/*.test.js' --reporter spec --require babel-register --timeout 4000"
+  },
+  "dependencies": {
+    "syncano-server": "gamma"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "chai": "^4.1.2",
+    "syncano-test": "^0.1.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "7"
+          }
+        }
+      ]
+    ]
+  }
+}
